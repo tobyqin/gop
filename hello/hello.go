@@ -2,20 +2,23 @@ package main
 
 import (
 	"fmt"
-  "log"
+	"log"
 
 	"tobyqin.cn/greetings"
 )
 
-func main (){
-  log.SetPrefix("grettings: ")
-  log.SetFlags(0)
+func main() {
+	log.SetPrefix("grettings: ")
+	log.SetFlags(0)
 
-  message, err := greetings.Hello("")
+	for i := 0; i < 5; i++ {
+		message, err := greetings.Hello("Toby")
 
-  if err !=nil{
-    log.Fatal(err)
-  }
+		if err != nil {
+			log.Fatal(err)
+		}
 
-  fmt.Println(message)
+    fmt.Println(message)
+
+	}
 }
