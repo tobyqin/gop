@@ -49,4 +49,7 @@ func main() {
 	isValidEmail := strings.Contains(appName, "@")
 	fmt.Printf("\n%v, %v\n", isValidName, isValidEmail)
 
+	var c rune = '中'
+	fmt.Printf("%v %c", c, c)
+
 }
