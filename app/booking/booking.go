@@ -6,6 +6,13 @@ import (
 	"strings"
 )
 
+type UserData struct {
+	firstName string
+	lastName  string
+	email     string
+	age       int
+}
+
 func Book() {
 	var appName = "booking app"
 	const totalTickets uint = 100
@@ -55,11 +62,18 @@ func Book() {
 
 }
 
-func CreateUserData() {
+func CreateUserDataMap() {
 	var userData = make(map[string]string)
 	userData["name"] = "toby"
 	userData["email"] = "toby@me.com"
 	userData["age"] = strconv.FormatInt(123, 2)
 
 	fmt.Println(userData)
+}
+
+func CreateUserDataStruct() {
+	var userDataList = []UserData{}
+	userDataList = append(userDataList, UserData{firstName: "toby", lastName: "me", email: "abc", age: 12})
+
+	fmt.Println(userDataList)
 }
