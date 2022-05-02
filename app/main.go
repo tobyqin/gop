@@ -21,4 +21,5 @@ func main() {
 		fmt.Println(message)
 	}
 	booking.Book()
+	booking.CreateUserData()
 }

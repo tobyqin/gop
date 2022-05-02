@@ -2,6 +2,7 @@ package booking
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
@@ -52,4 +53,13 @@ func Book() {
 	var c rune = '中'
 	fmt.Printf("%v %c", c, c)
 
+}
+
+func CreateUserData() {
+	var userData = make(map[string]string)
+	userData["name"] = "toby"
+	userData["email"] = "toby@me.com"
+	userData["age"] = strconv.FormatInt(123, 2)
+
+	fmt.Println(userData)
 }
