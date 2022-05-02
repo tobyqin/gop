@@ -1,11 +1,11 @@
-package main
+package booking
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
+func Book() {
 	var appName = "booking app"
 	const totalTickets uint = 100
 	var remainingTickets uint = totalTickets

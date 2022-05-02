@@ -4,11 +4,12 @@ import (
 	"fmt"
 	"log"
 
-	"tobyqin.cn/greetings"
+	"gop-app/booking"
+	"gop-app/greetings"
 )
 
 func main() {
-	log.SetPrefix("grettings: ")
+	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
 	for i := 0; i < 5; i++ {
@@ -17,8 +18,7 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-
-    fmt.Println(message)
-
+		fmt.Println(message)
 	}
+	booking.Book()
 }

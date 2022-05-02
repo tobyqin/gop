@@ -17,13 +17,12 @@ func Hello(name string) (string, error) {
 	return message, nil
 }
 
-
-func init(){
+func init() {
 	rand.Seed(time.Now().UnixNano())
 }
 
-func randomFormat()string{
-	formats :=[]string{
+func randomFormat() string {
+	formats := []string{
 		"hello, %v, welcome!",
 		"Great to see you, %v!",
 		"Hail, %v! Well met!",
